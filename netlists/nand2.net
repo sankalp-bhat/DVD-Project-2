@@ -1,0 +1,35 @@
+*Leakage current/power in NAND2 cell
+*.INCLUDE ../model/45nm_MGK.pm
+*.INCLUDE ../model/32nm_MGK.pm
+.INCLUDE ../45nm_HP.pm
+
+
+.PARAM Lmin=45n
+.PARAM Wmin=45n
+.PARAM Ldiff=90n
+*.PARAM tr=50p
+.PARAM Coutp=1f
+
+Mp1	nodeZ	nodea	node1	node1	pmos	W={Wmin} L={Lmin} AS={Wmin*Ldiff} AD={Wmin*Ldiff} PS={2*(Ldiff+Wmin)} PD={2*(Ldiff+Wmin)}
+Mp2	nodeZ	nodeb	node1	node1	pmos	W={Wmin} L={Lmin} AS={Wmin*Ldiff} AD={Wmin*Ldiff} PS={2*(Ldiff+Wmin)} PD={2*(Ldiff+Wmin)}
+
+Mn1	node4	nodeb	0	0	nmos	W={Wmin} L={Lmin} AS={Wmin*Ldiff} AD={Wmin*Ldiff} PS={2*(Ldiff+Wmin)} PD={2*(Ldiff+Wmin)}
+Mn2	nodeZ	nodea	node4	0	nmos	W={Wmin} L={Lmin} AS={Wmin*Ldiff} AD={Wmin*Ldiff} PS={2*(Ldiff+Wmin)} PD={2*(Ldiff+Wmin)}
+
+Vdd 	node1 	0 	1
+
+Vina nodea 0 0
+Vinb nodeb 0 0
+
+*Definition of type of analysis
+
+.TRAN 0.1p 3600p
+.PRINT tran V(nodea) V(nodeb) V(nodeZ)
+
+.meas tran delay_LH trig v(nodea) val=0.5 fall=1 targ v(nodeZ) val=0.5 rise=1
+.meas tran delay_HL trig v(nodea) val=0.5 rise=1 targ v(nodeZ) val=0.5 fall=1
+
+.CONTROL
+run
+.ENDC
+.END
