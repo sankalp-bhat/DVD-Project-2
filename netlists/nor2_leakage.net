@@ -1,4 +1,4 @@
-*Leakage current/power in NAND2 cell
+*Leakage current/power in NOR2 cell
 
 .PARAM Vin_A=1
 .PARAM Vin_B=0
@@ -158,11 +158,11 @@
 .PARAM Wmin=45n
 .PARAM Coutp=1f
 
-Mp1	nodeZ	nodea	node1	node1	pmos	W={Wmin} L={Lmin}
-Mp2	nodeZ	nodeb	node1	node1	pmos	W={Wmin} L={Lmin}
+Mp1	node4	nodea	node1	node1	pmos	W={Wmin} L={Lmin} 
+Mp2	nodeZ	nodeb	node4	node1	pmos	W={Wmin} L={Lmin} 
 
-Mn1	node4	nodeb	0	0	nmos	W={Wmin} L={Lmin}
-Mn2	nodeZ	nodea	node4	0	nmos	W={Wmin} L={Lmin}
+Mn1	nodeZ	nodea	0	0	nmos	W={Wmin} L={Lmin} 
+Mn2	nodeZ	nodeb	0	0	nmos	W={Wmin} L={Lmin}
 
 Vdd 	node1 	0 	pvdd
 

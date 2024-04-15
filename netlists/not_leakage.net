@@ -1,7 +1,6 @@
 *Leakage current/power in NAND2 cell
 
 .PARAM Vin_A=1
-.PARAM Vin_B=0
 .PARAM pvdd=1.1
 
 .PARAM toxe_n=8.25e-10
@@ -158,20 +157,16 @@
 .PARAM Wmin=45n
 .PARAM Coutp=1f
 
-Mp1	nodeZ	nodea	node1	node1	pmos	W={Wmin} L={Lmin}
-Mp2	nodeZ	nodeb	node1	node1	pmos	W={Wmin} L={Lmin}
-
-Mn1	node4	nodeb	0	0	nmos	W={Wmin} L={Lmin}
-Mn2	nodeZ	nodea	node4	0	nmos	W={Wmin} L={Lmin}
+Mp1	nodeZ	nodea	node1	node1	pmos	W={Wmin} L={Lmin} 
+Mn2	nodeZ	nodea	0	0	nmos	W={Wmin} L={Lmin}
 
 Vdd 	node1 	0 	pvdd
 
 Vina nodea 0 Vin_A
-Vinb nodeb 0 Vin_B
 
 .temp 40
 .CONTROL
 dc temp 40 40 1
-print (-V(node1)*I(Vdd)) ((-V(node1)*I(Vdd))+(-V(nodea)*I(Vina))+(-V(nodeb)*I(Vinb)))
+print (-V(node1)*I(Vdd)) ((-V(node1)*I(Vdd))+(-V(nodea)*I(Vina)))
 .ENDC
 .END

@@ -1,4 +1,4 @@
-*Leakage current/power in NAND2 cell
+*Delay in NAND2 cell
 
 .PARAM Vin_A=1
 .PARAM Vin_B=0
@@ -156,22 +156,27 @@
 
 .PARAM Lmin=45n
 .PARAM Wmin=45n
+*.PARAM tr=50p
 .PARAM Coutp=1f
 
-Mp1	nodeZ	nodea	node1	node1	pmos	W={Wmin} L={Lmin}
-Mp2	nodeZ	nodeb	node1	node1	pmos	W={Wmin} L={Lmin}
+Mp1	nodeZ	nodea	node1	node1	pmos	W={Wmin} L={Lmin} 
+Mn2	nodeZ	nodea	0	0	nmos	W={Wmin} L={Lmin}
 
-Mn1	node4	nodeb	0	0	nmos	W={Wmin} L={Lmin}
-Mn2	nodeZ	nodea	node4	0	nmos	W={Wmin} L={Lmin}
+Vdd 	node1 	0 	1
+cqload nodeZ 0 0.05f
 
-Vdd 	node1 	0 	pvdd
+Vina nodea 0 PULSE(0 1 0 2ps 2ps 100ps 200ps 0)
 
-Vina nodea 0 Vin_A
-Vinb nodeb 0 Vin_B
+*Definition of type of analysis
 
-.temp 40
+.TRAN 0.1p 1000p
+.PRINT tran V(nodea) V(nodeZ)
+
+.meas tran delay_lh_nodea trig v(nodea) val=0.5 fall=1 targ v(nodeZ) val=0.5 rise=1
+.meas tran delay_hl_nodea trig v(nodea) val=0.5 rise=1 targ v(nodeZ) val=0.5 fall=1
+
 .CONTROL
-dc temp 40 40 1
-print (-V(node1)*I(Vdd)) ((-V(node1)*I(Vdd))+(-V(nodea)*I(Vina))+(-V(nodeb)*I(Vinb)))
+run
+plot V(nodea) V(nodeZ)
 .ENDC
 .END
