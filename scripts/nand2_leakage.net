@@ -1,16 +1,16 @@
 .include nand2_leakage.net
-.param temp=80.10710412721775
-.param pvdd=0.9074042747944124
-.param toxe_n=8.961731701894046e-10
-.param toxm_n=9.260037574121703e-10
-.param toxref_n=9.237994010437631e-10
-.param toxe_p=9.049376575886295e-10
-.param toxm_p=9.014676890181368e-10
-.param toxref_p=9.992235290599363e-10
-.param toxp_par=6.422983868041498e-10
-.param xj_n=1.434811836467611e-08
-.param xj_p=1.3768413900455485e-08
-.param ndep_n=6.457214034861189e+18
-.param ndep_p=2.91312978091528e+18
-.dc vin=0.0
-.save v(nodea) v(nodeb)
+.param temp=91.4435143912212
+.param pvdd=1.0251773291983624
+.param toxe_n=9.04522818997131e-10
+.param toxm_n=8.77442506638153e-10
+.param toxref_n=8.855996797151805e-10
+.param toxe_p=9.384903024469308e-10
+.param toxm_p=9.220999760912921e-10
+.param toxref_p=9.031884142096815e-10
+.param toxp_par=6.682386915447985e-10
+.param xj_n=1.4566774277853691e-08
+.param xj_p=1.4779783497461212e-08
+.param ndep_n=6.233398801043673e+18
+.param ndep_p=2.980220887479032e+18
+.dc vin_A=1.0 vin_B=1.0
+.save v(node1) v(nodea) v(nodeb) i(Vdd)
