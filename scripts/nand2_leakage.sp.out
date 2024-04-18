@@ -1,6 +1,0 @@
-v(node1) = 1.094446e+00
-v(nodea) = 1.000000e+00
-v(nodeb) = 0.000000e+00
-i(vdd) = -8.98040e-09
-(-v(node1)*i(vdd)) = 9.828560e-09
-((-v(node1)*i(vdd))+(-v(nodea)*i(vina))+(-v(nodeb)*i(vinb))) = 9.822391e-09

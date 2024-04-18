@@ -166,7 +166,7 @@ Mn1	node4	nodeb	0	0	nmos	W={Wmin} L={Lmin}
 Mn2	nodeZ	nodea	node4	0	nmos	W={Wmin} L={Lmin}
 
 Vdd 	node1 	0 	1
-cqload nodeZ 0 0.05f
+*cqload nodeZ 0 0.05f
 
 Vina nodea 0 PULSE(0 1 0 2ps 2ps 100ps 200ps 0)
 Vinb nodeb 0 PULSE(0 1 0 2ps 2ps 130ps 260ps 0)
@@ -184,6 +184,6 @@ Vinb nodeb 0 PULSE(0 1 0 2ps 2ps 130ps 260ps 0)
 
 .CONTROL
 run
-plot V(nodea) V(nodeb) V(nodeZ)
+*plot V(nodea) V(nodeb) V(nodeZ)
 .ENDC
 .END
