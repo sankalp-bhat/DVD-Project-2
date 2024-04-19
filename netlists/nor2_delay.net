@@ -163,6 +163,6 @@ Mn2	nodeZ	nodeb	0	0	nmos	W={Wmin} L={Lmin}
 Vdd 	node1 	0 	pvdd
 
 Vina nodea 0 PULSE(0 pvdd 0 0.1p 0.1p 10n 20n)
-Vinb nodeb 0 PULSE(0 pvdd 0 0.1p 0.1p 20n 40n)
+Vinb nodeb 0 PULSE(0 pvdd 0 0.1p 0.1p 10n 20n)
 
 .END
