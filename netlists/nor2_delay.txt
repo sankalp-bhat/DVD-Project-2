@@ -1,0 +1,91 @@
+
+Circuit: 
+
+Doing analysis at TEMP = 91.443514 and TNOM = 27.000000
+
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+node4                                  1.02486
+nodea                                        0
+node1                                  1.02518
+nodez                                  1.02473
+nodeb                                        0
+vinb#branch                        1.05752e-08
+vina#branch                        1.05895e-08
+vdd#branch                        -2.19812e-08
+
+
+No. of Data Rows : 513
+
+  Measurements for Transient Analysis
+
+delay_lh_nodea      =  2.281957e-10 targ=  1.022835e-08 trig=  1.000015e-08
+delay_hl_nodea      =  2.698851e-11 targ=  2.703851e-11 trig=  5.000000e-14
+delay_lh_nodeb      =  2.281957e-10 targ=  1.022835e-08 trig=  1.000015e-08
+delay_hl_nodeb      =  2.698851e-11 targ=  2.703851e-11 trig=  5.000000e-14
+
+Doing analysis at TEMP = 91.443514 and TNOM = 27.000000
+
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+node4                                 0.772419
+nodea                                        0
+node1                                  1.02518
+nodez                                 0.389186
+nodeb                                        0
+vinb#branch                        8.70688e-06
+vina#branch                        1.32659e-05
+vdd#branch                        -3.10652e-05
+
+
+No. of Data Rows : 513
+
+  Measurements for Transient Analysis
+
+delay_lh_nodea      =  2.281981e-10 targ=  1.022835e-08 trig=  1.000015e-08
+delay_hl_nodea      =  2.002721e-08 targ=  2.002726e-08 trig=  5.000000e-14
+delay_lh_nodeb      =  2.281981e-10 targ=  1.022835e-08 trig=  1.000015e-08
+delay_hl_nodeb      =  2.002721e-08 targ=  2.002726e-08 trig=  5.000000e-14
+
+
+Total analysis time (seconds) = 0.017
+
+Total elapsed time (seconds) = 0.021 
+
+Total DRAM available = 7729.207 MB.
+DRAM currently available =  420.449 MB.
+Total ngspice program size =   27.863 MB.
+Resident set size =   10.148 MB.
+Shared ngspice pages =    8.285 MB.
+Text (code) pages =    5.070 MB.
+Stack = 0 bytes.
+Library pages =   10.102 MB.
+
