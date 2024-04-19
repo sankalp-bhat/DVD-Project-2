@@ -1,4 +1,4 @@
-*Delay in NAND2 cell
+*Delay in NOR2 cell
 
 .PARAM Vin_A=1
 .PARAM Vin_B=0
@@ -154,36 +154,15 @@
 +rshg    = 0.4             gbmin   = 1e-010          rbpb    = 5               rbpd    = 15            
 +rbps    = 15              rbdb    = 15              rbsb    = 15              ngcon   = 1             
 
-.PARAM Lmin=45n
-.PARAM Wmin=45n
-*.PARAM tr=50p
-.PARAM Coutp=1f
-
 Mp1	node4	nodea	node1	node1	pmos	W={Wmin} L={Lmin} 
 Mp2	nodeZ	nodeb	node4	node1	pmos	W={Wmin} L={Lmin} 
 
 Mn1	nodeZ	nodea	0	0	nmos	W={Wmin} L={Lmin} 
 Mn2	nodeZ	nodeb	0	0	nmos	W={Wmin} L={Lmin}
 
-Vdd 	node1 	0 	1
-cqload nodeZ 0 0.05f
+Vdd 	node1 	0 	pvdd
 
-Vina nodea 0 PULSE(0 1 0 2ps 2ps 100ps 200ps 0)
-Vinb nodeb 0 PULSE(0 1 0 2ps 2ps 130ps 260ps 0)
+Vina nodea 0 PULSE(0 pvdd 0 0.1p 0.1p 10n 20n)
+Vinb nodeb 0 PULSE(0 pvdd 0 0.1p 0.1p 20n 40n)
 
-*Definition of type of analysis
-
-.TRAN 0.1p 1000p
-.PRINT tran V(nodea) V(nodeb) V(nodeZ)
-
-.meas tran delay_lh_nodea trig v(nodea) val=0.5 fall=4 targ v(nodeZ) val=0.5 rise=3
-.meas tran delay_hl_nodea trig v(nodea) val=0.5 rise=2 targ v(nodeZ) val=0.5 fall=2
-
-.meas tran delay_lh_nodeb trig v(nodeb) val=0.5 fall=1 targ v(nodeZ) val=0.5 rise=1
-.meas tran delay_hl_nodeb trig v(nodeb) val=0.5 rise=4 targ v(nodeZ) val=0.5 fall=4
-
-.CONTROL
-run
-plot V(nodea) V(nodeb) V(nodeZ)
-.ENDC
 .END

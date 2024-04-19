@@ -1,0 +1,79 @@
+
+No compatibility mode selected!
+
+
+Circuit: 
+
+Doing analysis at TEMP = 91.443514 and TNOM = 27.000000
+
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+nodez                                   1.0251
+nodea                                        0
+node1                                  1.02518
+nodeb                                        0
+node4                                0.0565019
+vinb#branch                        6.93935e-09
+vina#branch                        7.93808e-09
+vdd#branch                         -1.4949e-08
+
+
+No. of Data Rows : 514
+
+  Measurements for Transient Analysis
+
+delay_lh_nodea      =  1.025882e-10 targ=  1.010274e-08 trig=  1.000015e-08
+delay_hl_nodea      =  1.080613e-10 targ=  1.081113e-10 trig=  5.000000e-14
+delay_lh_nodeb      =  -9.897412e-09 targ=  1.010274e-08 trig=  2.000015e-08
+delay_hl_nodeb      =  1.080613e-10 targ=  1.081113e-10 trig=  5.000000e-14
+
+Doing analysis at TEMP = 91.443514 and TNOM = 27.000000
+
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+nodez                                  1.00196
+nodea                                        0
+node1                                  1.02518
+nodeb                                        0
+node4                                 0.017011
+vinb#branch                         1.4971e-06
+vina#branch                        1.82937e-06
+vdd#branch                        -4.45304e-06
+
+
+No. of Data Rows : 514
+
+  Measurements for Transient Analysis
+
+delay_lh_nodea      =  1.025883e-10 targ=  1.010274e-08 trig=  1.000015e-08
+delay_hl_nodea      =  1.028056e-10 targ=  1.028556e-10 trig=  5.000000e-14
+delay_lh_nodeb      =  -9.897412e-09 targ=  1.010274e-08 trig=  2.000015e-08
+delay_hl_nodeb      =  1.028056e-10 targ=  1.028556e-10 trig=  5.000000e-14
+
+
+Total analysis time (seconds) = 0.016
+
+Total elapsed time (seconds) = 0.021 
+
+Total DRAM available = 12708.492 MB.
+DRAM currently available = 12315.684 MB.
+Maximum ngspice program size =   28.156 MB.
+Current ngspice program size =   14.641 MB.
+
+Shared ngspice pages =   10.531 MB.
+Text (code) pages =    5.316 MB.
+Stack = 0 bytes.
+Library pages =   10.215 MB.
+

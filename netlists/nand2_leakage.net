@@ -1,21 +1,5 @@
 *Leakage current/power in NAND2 cell
 
-.PARAM Vin_A=1
-.PARAM Vin_B=0
-.PARAM pvdd=1.1
-
-.PARAM toxe_n=8.25e-10
-.PARAM toxm_n=8.25e-10
-.PARAM toxref_n=8.25e-10
-.PARAM ndep_n=5.5e18
-.PARAM xj_n=6.99e-9
-.PARAM toxp_par=8.25e-10
-.PARAM toxe_p=8.25e-10
-.PARAM toxm_p=8.25e-10
-.PARAM toxref_p=8.25e-10
-.PARAM ndep_p=5.5e18
-.PARAM xj_p=6.99e-9
-
 .model  nmos  nmos  level = 54
 
 +version = 4.0             binunit = 1               paramchk= 1               mobmod  = 0             
@@ -154,10 +138,6 @@
 +rshg    = 0.4             gbmin   = 1e-010          rbpb    = 5               rbpd    = 15            
 +rbps    = 15              rbdb    = 15              rbsb    = 15              ngcon   = 1             
 
-.PARAM Lmin=45n
-.PARAM Wmin=45n
-.PARAM Coutp=1f
-
 Mp1	nodeZ	nodea	node1	node1	pmos	W={Wmin} L={Lmin}
 Mp2	nodeZ	nodeb	node1	node1	pmos	W={Wmin} L={Lmin}
 
@@ -169,9 +149,4 @@ Vdd 	node1 	0 	pvdd
 Vina nodea 0 Vin_A
 Vinb nodeb 0 Vin_B
 
-.temp 40
-.CONTROL
-dc temp 40 40 1
-print (-V(node1)*I(Vdd)) ((-V(node1)*I(Vdd))+(-V(nodea)*I(Vina))+(-V(nodeb)*I(Vinb)))
-.ENDC
 .END
