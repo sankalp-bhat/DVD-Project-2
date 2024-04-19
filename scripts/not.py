@@ -2,7 +2,7 @@ import subprocess
 import pandas as pd
 
 # Load the PVT data
-not_data = pd.read_csv('../data/not_test.csv')
+not_data = pd.read_csv('../data/not_data.csv')
 not_data = not_data.dropna()
 
 def run_leakage_simulation(not_row):
