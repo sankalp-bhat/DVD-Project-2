@@ -6,11 +6,7 @@ Doing analysis at TEMP = 91.443514 and TNOM = 27.000000
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
 Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
 Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
-Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
-Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
-Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
-Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
 Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
 Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
 
@@ -19,35 +15,26 @@ Initial Transient Solution
 
 Node                                   Voltage
 ----                                   -------
-node4                                  1.02486
+nodez                                  1.02507
 nodea                                        0
 node1                                  1.02518
-nodez                                  1.02473
-nodeb                                        0
-vinb#branch                        1.05752e-08
-vina#branch                        1.05895e-08
-vdd#branch                        -2.19812e-08
+vina#branch                        2.35595e-08
+vdd#branch                        -2.39679e-08
 
 
-No. of Data Rows : 513
+No. of Data Rows : 453
 
   Measurements for Transient Analysis
 
-delay_lh_nodea      =  2.281957e-10 targ=  1.022835e-08 trig=  1.000015e-08
-delay_hl_nodea      =  2.698851e-11 targ=  2.703851e-11 trig=  5.000000e-14
-delay_lh_nodeb      =  2.281957e-10 targ=  1.022835e-08 trig=  1.000015e-08
-delay_hl_nodeb      =  2.698851e-11 targ=  2.703851e-11 trig=  5.000000e-14
+delay_lh_nodea      =  4.998807e-10 targ=  2.550008e-08 trig=  2.500020e-08
+delay_hl_nodea      =  5.455283e-11 targ=  5.470283e-11 trig=  1.500000e-13
 
 Doing analysis at TEMP = 91.443514 and TNOM = 27.000000
 
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
 Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
 Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
-Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
-Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
-Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
-Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
 Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
 Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
 
@@ -56,36 +43,31 @@ Initial Transient Solution
 
 Node                                   Voltage
 ----                                   -------
-node4                                 0.772419
+nodez                                 0.994193
 nodea                                        0
 node1                                  1.02518
-nodez                                 0.389186
-nodeb                                        0
-vinb#branch                        8.70688e-06
-vina#branch                        1.32659e-05
-vdd#branch                        -3.10652e-05
+vina#branch                        5.57098e-06
+vdd#branch                        -6.76323e-06
 
 
-No. of Data Rows : 513
+No. of Data Rows : 453
 
   Measurements for Transient Analysis
 
-delay_lh_nodea      =  2.281981e-10 targ=  1.022835e-08 trig=  1.000015e-08
-delay_hl_nodea      =  2.002721e-08 targ=  2.002726e-08 trig=  5.000000e-14
-delay_lh_nodeb      =  2.281981e-10 targ=  1.022835e-08 trig=  1.000015e-08
-delay_hl_nodeb      =  2.002721e-08 targ=  2.002726e-08 trig=  5.000000e-14
+delay_lh_nodea      =  4.998807e-10 targ=  2.550008e-08 trig=  2.500020e-08
+delay_hl_nodea      =  5.173931e-11 targ=  5.188931e-11 trig=  1.500000e-13
 
 
-Total analysis time (seconds) = 0.017
+Total analysis time (seconds) = 0.02
 
-Total elapsed time (seconds) = 0.021 
+Total elapsed time (seconds) = 0.025 
 
-Total DRAM available = 7729.207 MB.
-DRAM currently available =  420.449 MB.
-Total ngspice program size =   27.863 MB.
-Resident set size =   10.148 MB.
-Shared ngspice pages =    8.285 MB.
-Text (code) pages =    5.070 MB.
+Total DRAM available = 7696.910 MB.
+DRAM currently available =  853.020 MB.
+Total ngspice program size =   29.719 MB.
+Resident set size =    9.496 MB.
+Shared ngspice pages =    7.836 MB.
+Text (code) pages =    5.789 MB.
 Stack = 0 bytes.
-Library pages =   10.102 MB.
+Library pages =    9.980 MB.
 
