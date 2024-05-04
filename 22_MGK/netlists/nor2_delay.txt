@@ -1,0 +1,73 @@
+
+Circuit: 
+
+Doing analysis at TEMP = 91.443514 and TNOM = 27.000000
+
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+nodez                                  1.02512
+nodea                                        0
+node1                                  1.02518
+vina#branch                         5.9241e-09
+vdd#branch                        -7.35197e-09
+
+
+No. of Data Rows : 453
+
+  Measurements for Transient Analysis
+
+delay_lh_nodea      =  4.987701e-10 targ=  2.549897e-08 trig=  2.500020e-08
+delay_hl_nodea      =  5.311134e-11 targ=  5.326134e-11 trig=  1.500000e-13
+
+Doing analysis at TEMP = 91.443514 and TNOM = 27.000000
+
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+nodez                                 0.970153
+nodea                                        0
+node1                                  1.02518
+vina#branch                        5.63377e-06
+vdd#branch                        -6.26906e-06
+
+
+No. of Data Rows : 453
+
+  Measurements for Transient Analysis
+
+delay_lh_nodea      =  4.987701e-10 targ=  2.549897e-08 trig=  2.500020e-08
+delay_hl_nodea      =  4.793913e-11 targ=  4.808913e-11 trig=  1.500000e-13
+
+
+Total analysis time (seconds) = 0.033
+
+Total elapsed time (seconds) = 0.043 
+
+Total DRAM available = 7696.910 MB.
+DRAM currently available = 1396.559 MB.
+Total ngspice program size =   29.719 MB.
+Resident set size =    9.375 MB.
+Shared ngspice pages =    7.715 MB.
+Text (code) pages =    5.789 MB.
+Stack = 0 bytes.
+Library pages =    9.980 MB.
+
