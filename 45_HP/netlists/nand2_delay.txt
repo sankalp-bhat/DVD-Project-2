@@ -1,79 +1,91 @@
 
-No compatibility mode selected!
-
-
 Circuit: 
 
 Doing analysis at TEMP = 91.443514 and TNOM = 27.000000
 
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
 
 Initial Transient Solution
 --------------------------
 
 Node                                   Voltage
 ----                                   -------
-nodez                                   1.0251
+nodez                                  1.02507
 nodea                                        0
 node1                                  1.02518
 nodeb                                        0
-node4                                0.0565019
-vinb#branch                        6.93935e-09
-vina#branch                        7.93808e-09
-vdd#branch                         -1.4949e-08
+node4                                0.0571612
+vinb#branch                        2.31774e-08
+vina#branch                        2.40509e-08
+vdd#branch                          -4.739e-08
 
 
-No. of Data Rows : 514
+No. of Data Rows : 512
 
   Measurements for Transient Analysis
 
-delay_lh_nodea      =  1.025882e-10 targ=  1.010274e-08 trig=  1.000015e-08
-delay_hl_nodea      =  1.080613e-10 targ=  1.081113e-10 trig=  5.000000e-14
-delay_lh_nodeb      =  -9.897412e-09 targ=  1.010274e-08 trig=  2.000015e-08
-delay_hl_nodeb      =  1.080613e-10 targ=  1.081113e-10 trig=  5.000000e-14
+delay_lh_nodea      =  2.509416e-11 targ=  1.002524e-08 trig=  1.000015e-08
+delay_hl_nodea      =  5.302919e-11 targ=  5.307919e-11 trig=  5.000000e-14
+delay_lh_nodeb      =  2.509416e-11 targ=  1.002524e-08 trig=  1.000015e-08
+delay_hl_nodeb      =  5.302919e-11 targ=  5.307919e-11 trig=  5.000000e-14
 
 Doing analysis at TEMP = 91.443514 and TNOM = 27.000000
 
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
 
 Initial Transient Solution
 --------------------------
 
 Node                                   Voltage
 ----                                   -------
-nodez                                  1.00196
+nodez                                  1.00211
 nodea                                        0
 node1                                  1.02518
 nodeb                                        0
-node4                                 0.017011
-vinb#branch                         1.4971e-06
-vina#branch                        1.82937e-06
-vdd#branch                        -4.45304e-06
+node4                                0.0185163
+vinb#branch                        3.39059e-06
+vina#branch                        4.14379e-06
+vdd#branch                        -9.92301e-06
 
 
-No. of Data Rows : 514
+No. of Data Rows : 512
 
   Measurements for Transient Analysis
 
-delay_lh_nodea      =  1.025883e-10 targ=  1.010274e-08 trig=  1.000015e-08
-delay_hl_nodea      =  1.028056e-10 targ=  1.028556e-10 trig=  5.000000e-14
-delay_lh_nodeb      =  -9.897412e-09 targ=  1.010274e-08 trig=  2.000015e-08
-delay_hl_nodeb      =  1.028056e-10 targ=  1.028556e-10 trig=  5.000000e-14
+delay_lh_nodea      =  2.509416e-11 targ=  1.002524e-08 trig=  1.000015e-08
+delay_hl_nodea      =  5.074290e-11 targ=  5.079290e-11 trig=  5.000000e-14
+delay_lh_nodeb      =  2.509416e-11 targ=  1.002524e-08 trig=  1.000015e-08
+delay_hl_nodeb      =  5.074290e-11 targ=  5.079290e-11 trig=  5.000000e-14
 
 
-Total analysis time (seconds) = 0.016
+Total analysis time (seconds) = 0.02
 
-Total elapsed time (seconds) = 0.021 
+Total elapsed time (seconds) = 0.022 
 
-Total DRAM available = 12708.492 MB.
-DRAM currently available = 12315.684 MB.
-Maximum ngspice program size =   28.156 MB.
-Current ngspice program size =   14.641 MB.
-
-Shared ngspice pages =   10.531 MB.
-Text (code) pages =    5.316 MB.
+Total DRAM available = 7729.195 MB.
+DRAM currently available =  395.270 MB.
+Total ngspice program size =   27.867 MB.
+Resident set size =   10.207 MB.
+Shared ngspice pages =    8.344 MB.
+Text (code) pages =    5.070 MB.
 Stack = 0 bytes.
-Library pages =   10.215 MB.
+Library pages =   10.105 MB.
 
