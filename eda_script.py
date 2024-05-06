@@ -63,14 +63,14 @@ class GateEDA:
         plt.tight_layout()
         plt.show()
 
-    def line_plot(self, x, y, xlabel, ylabel, title):
+    def scatter_plot(self, x, y, xlabel, ylabel, title):
         plt.figure(figsize=(8, 6))
-        plt.plot(self.data[x], self.data[y])
+        plt.scatter(self.data[x], self.data[y])
         plt.xlabel(xlabel)
         plt.ylabel(ylabel)
         plt.title(title)
         plt.show()
-
+    
     def plot_3d(self, x, y, z, xlabel, ylabel, zlabel, title):
         fig = plt.figure(figsize=(15, 15))
         ax = fig.add_subplot(111, projection='3d')
@@ -240,8 +240,6 @@ class GateEDA:
         self.vif = vif_data
         print("VIF Scores:")
         print(vif_data)
-
-
 
 # usage
 # gate_eda = GateEDA("data.csv")
