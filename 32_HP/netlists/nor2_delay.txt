@@ -1,73 +1,79 @@
 
+No compatibility mode selected!
+
+
 Circuit: 
 
 Doing analysis at TEMP = 91.443514 and TNOM = 27.000000
 
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
-Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
-Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
-Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
-Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
 
 Initial Transient Solution
 --------------------------
 
 Node                                   Voltage
 ----                                   -------
-nodez                                  1.02517
+node4                                  1.02516
 nodea                                        0
 node1                                  1.02518
-vina#branch                        1.39709e-09
-vdd#branch                         -1.4688e-09
+nodez                                  1.02515
+nodeb                                        0
+vinb#branch                        3.15551e-09
+vina#branch                        3.15596e-09
+vdd#branch                        -6.45489e-09
 
 
-No. of Data Rows : 453
+No. of Data Rows : 511
 
   Measurements for Transient Analysis
 
-delay_lh_nodea      =  1.103881e-09 targ=  2.610408e-08 trig=  2.500020e-08
-delay_hl_nodea      =  8.500156e-11 targ=  8.515156e-11 trig=  1.500000e-13
+delay_lh_nodea      =  1.100676e-10 targ=  1.011022e-08 trig=  1.000015e-08
+delay_hl_nodea      =  4.571968e-11 targ=  4.576968e-11 trig=  5.000000e-14
+delay_lh_nodeb      =  1.100676e-10 targ=  1.011022e-08 trig=  1.000015e-08
+delay_hl_nodeb      =  4.571968e-11 targ=  4.576968e-11 trig=  5.000000e-14
 
 Doing analysis at TEMP = 91.443514 and TNOM = 27.000000
 
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
-Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
-Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
-Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
-Warning: Ngate = 1e+17 is less than 1.E18cm^-3.
 
 Initial Transient Solution
 --------------------------
 
 Node                                   Voltage
 ----                                   -------
-nodez                                 0.967693
+node4                                 0.939359
 nodea                                        0
 node1                                  1.02518
-vina#branch                        6.01454e-06
-vdd#branch                         -7.3196e-06
+nodez                                 0.898303
+nodeb                                        0
+vinb#branch                        8.43314e-06
+vina#branch                        9.15809e-06
+vdd#branch                        -1.94038e-05
 
 
-No. of Data Rows : 453
+No. of Data Rows : 510
 
   Measurements for Transient Analysis
 
-delay_lh_nodea      =  1.103881e-09 targ=  2.610408e-08 trig=  2.500020e-08
-delay_hl_nodea      =  7.528879e-11 targ=  7.543879e-11 trig=  1.500000e-13
+delay_lh_nodea      =  1.100679e-10 targ=  1.011022e-08 trig=  1.000015e-08
+delay_hl_nodea      =  3.522170e-11 targ=  3.527170e-11 trig=  5.000000e-14
+delay_lh_nodeb      =  1.100679e-10 targ=  1.011022e-08 trig=  1.000015e-08
+delay_hl_nodeb      =  3.522170e-11 targ=  3.527170e-11 trig=  5.000000e-14
 
 
-Total analysis time (seconds) = 0.014
+Total analysis time (seconds) = 0.016
 
-Total elapsed time (seconds) = 0.019 
+Total elapsed time (seconds) = 0.021 
 
-Total DRAM available = 7696.910 MB.
-DRAM currently available =  376.816 MB.
-Total ngspice program size =   29.719 MB.
-Resident set size =    9.434 MB.
-Shared ngspice pages =    7.773 MB.
-Text (code) pages =    5.789 MB.
+Total DRAM available = 12708.492 MB.
+DRAM currently available = 11685.805 MB.
+Maximum ngspice program size =   28.148 MB.
+Current ngspice program size =   12.852 MB.
+
+Shared ngspice pages =   10.734 MB.
+Text (code) pages =    5.316 MB.
 Stack = 0 bytes.
-Library pages =    9.980 MB.
+Library pages =   10.207 MB.
 

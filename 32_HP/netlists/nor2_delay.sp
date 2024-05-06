@@ -1,8 +1,9 @@
 
-    .include ../netlists/not_delay.net
+    .include ../netlists/nor2_delay.net
     .param temp=91.4435143912212
     .param pvdd=1.0251773291983624
-    .param Vin=1.0
+    .param Vin_A=1.0
+    .param Vin_B=1.0
     .param toxe_n=9.04522818997131e-10
     .param toxm_n=8.77442506638153e-10
     .param toxref_n=8.855996797151805e-10
@@ -27,9 +28,12 @@
     .meas tran delay_lh_nodea trig v(nodea) val=0.5125886645991812 fall=1.0251773291983624 targ v(nodeZ) val=0.5125886645991812 rise=1.0251773291983624
     .meas tran delay_hl_nodea trig v(nodea) val=0.5125886645991812 rise=1.0251773291983624 targ v(nodeZ) val=0.5125886645991812 fall=1.0251773291983624
 
+    .meas tran delay_lh_nodeb trig v(nodeb) val=0.5125886645991812 fall=1.0251773291983624 targ v(nodeZ) val=0.5125886645991812 rise=1.0251773291983624
+    .meas tran delay_hl_nodeb trig v(nodeb) val=0.5125886645991812 rise=1.0251773291983624 targ v(nodeZ) val=0.5125886645991812 fall=1.0251773291983624
+
     .CONTROL
         run
-    .ENDC
-
+    .ENDC 
+    
     .END
     
