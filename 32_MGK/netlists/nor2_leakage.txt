@@ -1,0 +1,32 @@
+
+Circuit: 
+
+Doing analysis at TEMP = 104.754010 and TNOM = 27.000000
+
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+Warning: This model is BSIM4.5.0; you specified a wrong version number '4.0'.
+
+No. of Data Rows : 1
+((-v(node1)*i(vdd))+(-v(nodea)*i(vina))+(-v(nodeb)*i(vinb))) = 6.699809e-08
