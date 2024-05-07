@@ -1,0 +1,99 @@
+
+No compatibility mode selected!
+
+
+Circuit: 
+
+Doing analysis at TEMP = 23.194993 and TNOM = 27.000000
+
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+supp                                         1
+a                                            0
+b                                            0
+an                                    0.999184
+bn                                    0.999152
+i1                                    0.142611
+out                                0.000606241
+i2                                    0.999618
+node4                              0.000397841
+node5                              0.000293819
+vb#branch                          7.49186e-08
+va#branch                          1.44287e-07
+vds#branch                        -2.98779e-07
+
+
+No. of Data Rows : 5141
+
+  Measurements for Transient Analysis
+
+tfall_a             =  8.104112e-11 targ=  2.000811e-07 trig=  2.000001e-07
+trise_a             =  1.273102e-10 targ=  1.273602e-10 trig=  5.000000e-14
+tpd_a               =  1.04176e-10
+tfall_b             =  7.970156e-11 targ=  5.007975e-08 trig=  5.000005e-08
+trise_b             =  1.149661e-10 targ=  2.501151e-07 trig=  2.500002e-07
+tpd_b               =  9.73338e-11
+delay_lh_nodea      =  1.27310e-10
+delay_hl_nodea      =  8.10411e-11
+delay_lh_nodeb      =  1.14966e-10
+delay_hl_nodeb      =  7.97016e-11
+
+Doing analysis at TEMP = 23.194993 and TNOM = 27.000000
+
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+supp                                         1
+a                                            0
+b                                            0
+an                                    0.945167
+bn                                    0.942355
+i1                                    0.402079
+out                                   0.109045
+i2                                    0.981832
+node4                                0.0561378
+node5                              4.41821e-05
+vb#branch                          4.92278e-06
+va#branch                          7.77109e-06
+vds#branch                        -2.78774e-05
+
+
+No. of Data Rows : 5141
+
+  Measurements for Transient Analysis
+
+tfall_a             =  8.104112e-11 targ=  2.000811e-07 trig=  2.000001e-07
+trise_a             =  9.997108e-11 targ=  1.000211e-10 trig=  5.000000e-14
+tpd_a               =  1.04176e-10
+tfall_b             =  7.970150e-11 targ=  5.007975e-08 trig=  5.000005e-08
+trise_b             =  1.149661e-10 targ=  2.501151e-07 trig=  2.500002e-07
+tpd_b               =  9.73338e-11
+delay_lh_nodea      =  1.27310e-10
+delay_hl_nodea      =  8.10411e-11
+delay_lh_nodeb      =  1.14966e-10
+delay_hl_nodeb      =  7.97016e-11
+
+
+Total analysis time (seconds) = 0.56
+
+Total elapsed time (seconds) = 0.571 
+
+Total DRAM available = 12708.492 MB.
+DRAM currently available = 11795.352 MB.
+Maximum ngspice program size =   30.797 MB.
+Current ngspice program size =   15.500 MB.
+
+Shared ngspice pages =   10.801 MB.
+Text (code) pages =    5.316 MB.
+Stack = 0 bytes.
+Library pages =   12.855 MB.
+

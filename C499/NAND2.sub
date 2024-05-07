@@ -1,0 +1,14 @@
+.subckt NAND2 VDD 0 A B OP
+    
+    * Parameters
+    .PARAM Lmin=16n
+    .PARAM Wmin=16n
+    .PARAM Ldiff=32n
+
+    *NAND2
+    Mp1 OP A VDD VDD pmos W={2*{Wmin}} L={Lmin}
+    MP2 OP B VDD VDD pmos W={2*{Wmin}} L={Lmin}
+    Mn1 OP A T 0 nmos W={2*{Wmin}} L={Lmin}
+    Mn2 T B 0 0 nmos W={2*{Wmin}} L={Lmin}
+
+.ends NAND2

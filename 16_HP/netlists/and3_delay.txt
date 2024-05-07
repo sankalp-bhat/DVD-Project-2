@@ -1,0 +1,9 @@
+
+No compatibility mode selected!
+
+
+Circuit: 
+
+Error on line 30 :
+  m1 an a 0 0 cmosn w=4.5832571913615656e-08 l=4.1604509548446296e-08 as=9.53420837904937e-15 ps=5.077102393116943e-07 ad=9.53420837904937e-15 pd=5.077102393116943e-07
+could not find a valid modelname

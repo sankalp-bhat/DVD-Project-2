@@ -1,0 +1,10 @@
+.subckt AND2 VDD 0 A B OP
+
+    .INCLUDE NAND2.sub
+    .INCLUDE NOT.sub
+
+    * AND2
+    X1 VDD 0 A B OP1 NAND2
+    X2 VDD 0 OP1 OP NOT
+
+.ends AND2
