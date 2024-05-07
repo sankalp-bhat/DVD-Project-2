@@ -1,0 +1,9 @@
+.subckt AND3 VDD 0 A B C OP
+
+    .INCLUDE AND2.sub
+
+    * AND3
+    X1 VDD 0 A B OP1 AND2
+    X2 VDD 0 OP1 C OP AND2
+
+.ends

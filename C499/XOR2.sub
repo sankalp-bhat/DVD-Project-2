@@ -1,0 +1,13 @@
+.subckt XOR2 VDD 0 A B OP
+
+    .INCLUDE NAND2.sub
+    .INCLUDE NOR2.sub
+    .INCLUDE NOT.sub
+
+    * XOR2 
+    X1 VDD 0 A B ANDB NAND2
+    X2 VDD 0 A B ORB NOR2
+    X3 VDD 0 ANDB ORB OP NAND2
+    X4 VDD 0 OP O NOT
+
+.ends XOR2
