@@ -1,0 +1,12 @@
+.subckt NOT VDD 0 A OP
+
+    * Parameters
+    .PARAM Lmin=16n
+    .PARAM Wmin=16n
+    .PARAM Ldiff=32n
+
+    * NOT
+    Mp OP A VDD VDD pmos W={2*{Wmin}} L={Lmin}
+    Mn OP A 0 0 nmos W={Wmin} L={Lmin}
+
+.ends NOT

@@ -1,0 +1,14 @@
+.subckt NOR2 VDD 0 A B OP
+
+    * Parameters
+    .PARAM Lmin=16n
+    .PARAM Wmin=16n
+    .PARAM Ldiff=32n
+
+    * NOR2
+    Mp1 T A VDD VDD pmos W={4*{Wmin}} L={Lmin}
+    Mp2 OP B T VDD pmos W={4*{Wmin}} L={Lmin}
+    Mn1 OP A 0 0 nmos W={{Wmin}} L={Lmin}
+    Mn2 OP B 0 0 nmos W={{Wmin}} L={Lmin}
+
+.ends NOR2

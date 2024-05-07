@@ -1,0 +1,10 @@
+.subckt OR2 VDD 0 A B OP
+
+    .INCLUDE NOR2.sub
+    .INCLUDE NOT.sub
+
+    * OR2
+    X1 VDD 0 A B OP1 NOR2
+    X2 VDD 0 OP1 OP NOT
+
+.ends AND2
